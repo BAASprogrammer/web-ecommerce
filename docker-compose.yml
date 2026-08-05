@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: ecommerce-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      # POSTGRES_DB crea solo la base "postgres" por defecto;
+      # las bases products_db/users_db/orders_db/notifications_db
+      # las crea el propio script init.sql al arrancar.
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - ecommerce-db-data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  ecommerce-db-data:
