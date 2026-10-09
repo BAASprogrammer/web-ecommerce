@@ -1,0 +1,31 @@
+server:
+  port: 8090   # Puerto del ai-service (ajústalo si choca con otro de tus microservicios)
+
+spring:
+  application:
+    name: ai-service
+
+  # Conexión a la base vectorial (pgvector en Docker, puerto 5433)
+  datasource:
+    url: jdbc:postgresql://localhost:5433/aidb
+    username: postgres
+    password: postgres
+
+  ai:
+    # Conexión a Ollama (app nativa en tu Mac)
+    ollama:
+      base-url: http://localhost:11434   # Si el ai-service corre en Docker, usa http://host.docker.internal:11434
+      embedding:
+        options:
+          model: nomic-embed-text        # Modelo de embeddings (genera vectores de 768 dimensiones)
+      chat:
+        options:
+          model: qwen2.5:7b              # Modelo de chat para el RAG (lo usaremos después)
+
+    # Configuración del almacén vectorial
+    vectorstore:
+      pgvector:
+        initialize-schema: true          # Crea automáticamente la extensión y la tabla vector_store
+        dimensions: 768                  # Debe coincidir con el modelo de embeddings (nomic-embed-text = 768)
+        distance-type: COSINE_DISTANCE   # Similitud por coseno, la más usada para texto
+        index-type: HNSW                 # Índice rápido para búsquedas por similitud

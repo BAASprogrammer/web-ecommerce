@@ -1,0 +1,16 @@
+# Base de datos vectorial para el ai-service (PostgreSQL + extensión pgvector)
+services:
+  pgvector:
+    image: pgvector/pgvector:pg16 # Imagen oficial con pgvector (tiene versión ARM64 para tu Mac)
+    container_name: ai-pgvector
+    environment:
+      POSTGRES_DB: aidb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432" # Puerto 5433 para no chocar con el PostgreSQL actual
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data # Persiste los datos aunque borres el contenedor
+
+volumes:
+  pgvector_data:

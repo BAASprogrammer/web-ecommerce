@@ -1,22 +1,25 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { DM_Sans, Fraunces } from "next/font/google";
 import { QueryProvider } from "@/components/providers/QueryProvider";
 import { LegalModalProvider } from "@/components/ui/LegalModal";
 import { ProductsProvider } from "@/context/ProductsContext";
 import { CategoriesProvider } from "@/context/CategoriesContext";
 import { AuthProvider } from "@/context/AuthContext";
+import ClientLayout from "@/components/providers/ClientLayout";
 import "./globals.css";
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
   display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const playfair = Playfair_Display({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-display",
   display: "swap",
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -37,13 +40,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${inter.variable} ${playfair.variable} h-full`}>
+    <html lang="es" className={`${dmSans.variable} ${fraunces.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
         <QueryProvider>
           <AuthProvider>
             <ProductsProvider>
               <CategoriesProvider>
-                <LegalModalProvider>{children}</LegalModalProvider>
+                <LegalModalProvider>
+                  {children}
+                  <ClientLayout />
+                </LegalModalProvider>
               </CategoriesProvider>
             </ProductsProvider>
           </AuthProvider>

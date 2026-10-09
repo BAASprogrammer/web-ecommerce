@@ -683,3 +683,578 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2026-08-04 21:03:37.915
 !MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+!SESSION 2026-10-09 16:32:01.194 -----------------------------------------------
+eclipse.buildId=4.39.0.20260305-0817
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_CL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/barbara/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/barbara/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-10-09 16:32:04.978
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-10-09 16:32:16.696
+!MESSAGE Logback config file: /Users/barbara/Desktop/ProyectosWeb/web-ecommerce/backend/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.ui 2 0 2026-10-09 16:32:17.174
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-10-09 16:32:17.174
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-10-09 16:32:17.614
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-10-09 16:32:17.614
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:30.082
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:30.082
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:30.082
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:30.083
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:31.148
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:31.148
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:31.148
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:31.148
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:37.308
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:37.308
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:37.308
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:06:37.308
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:58:25.866
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:58:25.867
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:58:25.867
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:58:25.867
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:58:28.569
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:58:28.571
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:58:28.571
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 17:58:28.571
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-10-09 17:58:32.510
+!MESSAGE Could not download sources for org.springframework.ai:spring-ai-starter-model-ollama:1.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.ai:spring-ai-starter-model-ollama:jar:sources:1.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:581)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:295)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:550)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:535)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:342)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.ai:spring-ai-starter-model-ollama:jar:sources:1.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2026-10-09 17:58:32.512
+!MESSAGE Could not resolve artifact org.springframework.ai:spring-ai-starter-model-ollama:jar:sources:1.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2026-10-09 17:58:32.512
+!MESSAGE Missing org.springframework.ai:spring-ai-starter-model-ollama:jar:sources:1.0.3
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-10-09 17:58:37.878
+!MESSAGE Could not download sources for org.springframework.ai:spring-ai-starter-vector-store-pgvector:1.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:sources:1.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:581)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:295)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:550)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:535)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:342)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:sources:1.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2026-10-09 17:58:37.879
+!MESSAGE Could not resolve artifact org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:sources:1.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2026-10-09 17:58:37.879
+!MESSAGE Missing org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:sources:1.0.3
+
+!ENTRY org.eclipse.jface 2 0 2026-10-09 18:01:49.308
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-10-09 18:01:49.308
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:02:57.086
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:02:57.088
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:02:57.089
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:02:57.089
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-10-09 18:02:58.404
+!MESSAGE Could not download javadoc for org.springframework.ai:spring-ai-starter-model-ollama:1.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.ai:spring-ai-starter-model-ollama:jar:javadoc:1.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:581)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:295)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:550)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:535)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:342)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.ai:spring-ai-starter-model-ollama:jar:javadoc:1.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2026-10-09 18:02:58.406
+!MESSAGE Could not resolve artifact org.springframework.ai:spring-ai-starter-model-ollama:jar:javadoc:1.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2026-10-09 18:02:58.406
+!MESSAGE Missing org.springframework.ai:spring-ai-starter-model-ollama:jar:javadoc:1.0.3
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-10-09 18:02:58.875
+!MESSAGE Could not download javadoc for org.springframework.ai:spring-ai-starter-vector-store-pgvector:1.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:javadoc:1.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:581)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:295)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:550)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:535)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:342)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:javadoc:1.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2026-10-09 18:02:58.875
+!MESSAGE Could not resolve artifact org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:javadoc:1.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2026-10-09 18:02:58.875
+!MESSAGE Missing org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:javadoc:1.0.3
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:41.467
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:41.467
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:41.468
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:41.468
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:41.628
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:41.628
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:41.628
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:41.628
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:42.957
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:42.957
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:42.957
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 18:10:42.957
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:07:32.915
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:07:32.954
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:07:32.958
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:07:32.959
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:19.387
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:19.389
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:19.389
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:19.389
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:42.984
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:42.984
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:42.984
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:42.984
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:43.471
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:43.471
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:43.471
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:11:43.471
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.ui 4 0 2026-10-09 19:12:16.411
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.swt.widgets.Display.filters(int)" because "this.display" is null
+	at org.eclipse.swt.widgets.Widget.filters(Widget.java:874)
+	at org.eclipse.swt.widgets.Control.scrollWheel(Control.java:2524)
+	at org.eclipse.swt.widgets.Link.scrollWheel(Link.java:591)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6421)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:239)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2407)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2534)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6413)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5716)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5856)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4011)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1051)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:684)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:615)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:563)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1415)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:06.775
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:06.776
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:06.776
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:06.776
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:07.989
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:07.989
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:07.989
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:07.989
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:10.198
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:10.198
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:10.198
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:10.198
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:10.477
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:10.477
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:10.477
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:10.477
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:23.415
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:23.418
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:23.419
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:23.419
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:24.152
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:24.153
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:24.153
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:14:24.153
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:06.105
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:06.105
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:06.105
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:06.106
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-10-09 19:16:08.438
+!MESSAGE Could not download sources for org.springframework.ai:spring-ai-starter-model-ollama:1.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.ai:spring-ai-starter-model-ollama:jar:sources:1.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:581)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:295)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:550)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:535)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:342)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.ai:spring-ai-starter-model-ollama:jar:sources:1.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2026-10-09 19:16:08.439
+!MESSAGE Could not resolve artifact org.springframework.ai:spring-ai-starter-model-ollama:jar:sources:1.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2026-10-09 19:16:08.439
+!MESSAGE Missing org.springframework.ai:spring-ai-starter-model-ollama:jar:sources:1.0.3
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-10-09 19:16:09.062
+!MESSAGE Could not download sources for org.springframework.ai:spring-ai-starter-vector-store-pgvector:1.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:sources:1.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:581)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:295)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:550)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:535)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:342)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:sources:1.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2026-10-09 19:16:09.063
+!MESSAGE Could not resolve artifact org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:sources:1.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2026-10-09 19:16:09.063
+!MESSAGE Missing org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:sources:1.0.3
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:11.274
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:11.275
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:11.275
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:11.275
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:11.556
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:11.556
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:11.556
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:16:11.556
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-10-09 19:16:12.837
+!MESSAGE Could not download javadoc for org.springframework.ai:spring-ai-starter-model-ollama:1.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.ai:spring-ai-starter-model-ollama:jar:javadoc:1.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:581)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:295)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:550)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:535)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:342)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.ai:spring-ai-starter-model-ollama:jar:javadoc:1.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2026-10-09 19:16:12.838
+!MESSAGE Could not resolve artifact org.springframework.ai:spring-ai-starter-model-ollama:jar:javadoc:1.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2026-10-09 19:16:12.838
+!MESSAGE Missing org.springframework.ai:spring-ai-starter-model-ollama:jar:javadoc:1.0.3
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-10-09 19:16:13.554
+!MESSAGE Could not download javadoc for org.springframework.ai:spring-ai-starter-vector-store-pgvector:1.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:javadoc:1.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:581)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:295)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:550)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:535)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:462)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:342)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:281)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:javadoc:1.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2026-10-09 19:16:13.554
+!MESSAGE Could not resolve artifact org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:javadoc:1.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2026-10-09 19:16:13.554
+!MESSAGE Missing org.springframework.ai:spring-ai-starter-vector-store-pgvector:jar:javadoc:1.0.3
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:17:16.237
+!MESSAGE Plugin is modifying compileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:17:16.249
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:17:16.251
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-10-09 19:17:16.251
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.

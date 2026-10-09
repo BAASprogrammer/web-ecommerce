@@ -32,11 +32,12 @@ export default function HomePage() {
         {/* HERO */}
         <section
           id="hero"
-          className="relative min-h-[580px] flex items-center overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 text-white"
+          className="relative min-h-[580px] flex items-center overflow-hidden text-white"
+          style={{ background: "linear-gradient(135deg, #1E1B6F 0%, #3730A3 50%, #1E1B6F 100%)" }}
         >
           {/* Background pattern */}
-          <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_80%_50%,rgb(5_150_105/0.15)_0%,transparent_60%)]" />
-          <div className="absolute -top-20 -right-20 w-[400px] h-[400px] bg-brand/8 rounded-full pointer-events-none" />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(circle at 75% 50%, rgba(249,115,22,0.18) 0%, transparent 60%)" }} />
+          <div className="absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full pointer-events-none" style={{ background: "rgba(79,70,229,0.12)" }} />
 
           <div className="max-w-7xl mx-auto py-16 px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Text */}
@@ -46,11 +47,11 @@ export default function HomePage() {
                 ¡Ofertas especiales activas!
               </div>
 
-              <h1 className="font-display text-[clamp(2.25rem,5vw,3.75rem)] font-black leading-[1.05] tracking-tight mb-5">
+              <h1 className="font-display text-[clamp(2.25rem,5vw,3.75rem)] font-black leading-[1.05] tracking-tight mb-5 text-white">
                 Todo lo que
                 <br />
                 necesitas,{" "}
-                <span className="text-brand">en un lugar</span>
+                <span style={{ color: "#F97316" }}>en un lugar</span>
               </h1>
 
               <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-[480px]">
@@ -78,8 +79,8 @@ export default function HomePage() {
               {/* Trust signals */}
               <div className="flex gap-6 mt-10 flex-wrap">
                 {TRUST_SIGNALS.map((item) => (
-                  <span key={item.label} className="flex items-center gap-2 text-sm text-gray-400 font-medium">
-                    <item.icon size={16} className="text-brand" />
+                  <span key={item.label} className="flex items-center gap-2 text-sm text-white/80 font-medium">
+                    <item.icon size={16} className="text-white" />
                     {item.label}
                   </span>
                 ))}
@@ -87,10 +88,10 @@ export default function HomePage() {
             </div>
 
             {/* Hero image */}
-            <div className="relative h-[420px] rounded-[20px] overflow-hidden hidden md:block">
+            <div className="relative h-[420px] rounded-[20px] overflow-hidden hidden md:block shadow-2xl">
               <Image
-                src="/hero-banner.png"
-                alt="Productos destacados"
+                src="/hero_banner.jpg"
+                alt="Tienda online — productos destacados, ofertas y más"
                 fill
                 className="object-cover"
                 priority
@@ -106,9 +107,8 @@ export default function HomePage() {
             {STATS.map((stat, index) => (
               <div
                 key={stat.label}
-                className={`text-center p-4 ${
-                  index < STATS.length - 1 ? "md:border-r md:border-gray-100" : ""
-                }`}
+                className={`text-center p-4 ${index < STATS.length - 1 ? "md:border-r md:border-gray-100" : ""
+                  }`}
               >
                 <div className="text-[2rem] font-black text-brand tracking-tight leading-none">
                   {stat.value}

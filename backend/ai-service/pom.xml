@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Spring Boot 3.5.x: compatible con Spring AI 1.0.x. Verifica la última versión en start.spring.io -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.6</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.ecommerce</groupId>
+    <artifactId>ai-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>ai-service</name>
+    <description>Microservicio de IA: búsqueda semántica y RAG</description>
+
+    <properties>
+        <java.version>21</java.version>
+        <spring-ai.version>1.0.3</spring-ai.version> <!-- Verifica la última 1.0.x/1.1.x disponible -->
+    </properties>
+
+    <dependencies>
+        <!-- API REST -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring AI: conexión con Ollama (chat + embeddings) -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-ollama</artifactId>
+        </dependency>
+
+        <!-- Spring AI: almacén vectorial con pgvector -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-vector-store-pgvector</artifactId>
+        </dependency>
+
+        <!-- Spring AI: Advisors (necesario para QuestionAnswerAdvisor) -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-advisors-vector-store</artifactId>
+        </dependency>
+
+        <!-- Driver de PostgreSQL (necesario para pgvector) -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <!-- BOM de Spring AI: fija las versiones de todas las dependencias spring-ai -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring-ai.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

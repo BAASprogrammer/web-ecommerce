@@ -1,41 +1,74 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
+  /* ─── Tipografía ─────────────────────────────────── */
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-serif, Georgia, serif;
 
-  /* Brand — Premium Emerald */
-  --color-brand: #059669;
-  --color-brand-dark: #047857;
-  --color-brand-light: #A7F3D0;
-  --color-brand-xlight: #ECFDF5;
+  /* ─── Paleta "Digital Commerce" ─────────────────────
+     Inspirada en Amazon, Mercado Libre y DTC brands top:
+     Índigo profundo (confianza) + Naranja eléctrico (acción)
+  ──────────────────────────────────────────────────── */
 
-  /* Shadows */
-  --shadow-card-hover: 0 20px 40px -8px rgb(5 150 105 / 0.15);
-  --shadow-brand-glow: 0 8px 20px -4px rgb(5 150 105 / 0.4);
-  --shadow-brand-soft: 0 8px 24px rgb(5 150 105 / 0.15);
+  /* Índigo profundo — marca / confianza */
+  --color-brand:       #3730A3;   /* indigo-700  */
+  --color-brand-dark:  #1E1B6F;   /* indigo-900  */
+  --color-brand-mid:   #4F46E5;   /* indigo-600  */
+  --color-brand-light: #C7D2FE;   /* indigo-200  */
+  --color-brand-xlight:#EEF2FF;   /* indigo-50   */
 
-  /* Animations */
-  --animate-fade-in-up: fadeInUp 0.6s ease forwards;
-  --animate-pulse-dot: pulse-dot 1.5s ease infinite;
+  /* Naranja eléctrico — CTA / acción */
+  --color-accent:       #EA580C;  /* orange-600  */
+  --color-accent-dark:  #C2410C;  /* orange-700  */
+  --color-accent-light: #FED7AA;  /* orange-200  */
+  --color-accent-xlight:#FFF7ED;  /* orange-50   */
+  --color-accent-vivid: #F97316;  /* orange-500 (botones hover) */
+
+  /* Amarillo badge — urgencia / oferta */
+  --color-badge:        #FBBF24;  /* amber-400   */
+  --color-badge-dark:   #D97706;  /* amber-600   */
+
+  /* Fondos y superficies */
+  --color-canvas:   #FFFFFF;      /* fondo principal: blanco puro */
+  --color-surface:  #F8FAFC;      /* tarjetas / secciones alternas */
+  --color-surface-2:#F1F5F9;      /* secciones con más contraste */
+  --color-border:   #E2E8F0;      /* bordes slate-200 */
+  --color-border-strong: #CBD5E1; /* bordes slate-300 */
+
+  /* Textos */
+  --color-ink:       #0F172A;     /* slate-900: casi negro */
+  --color-ink-soft:  #475569;     /* slate-600  */
+  --color-ink-muted: #94A3B8;     /* slate-400  */
+  --color-ink-invert:#FFFFFF;     /* texto sobre fondos oscuros */
+
+  /* Estado: éxito / error */
+  --color-success: #16A34A;
+  --color-error:   #DC2626;
+
+  /* ─── Sombras ────────────────────────────────────── */
+  --shadow-card:        0 1px 4px 0 rgba(15,23,42,0.06), 0 4px 16px -4px rgba(15,23,42,0.08);
+  --shadow-card-hover:  0 8px 30px -6px rgba(55,48,163,0.22), 0 2px 8px rgba(15,23,42,0.08);
+  --shadow-brand-glow:  0 8px 24px -4px rgba(79,70,229,0.45);
+  --shadow-accent-glow: 0 6px 20px -4px rgba(234,88,12,0.45);
+  --shadow-brand-soft:  0 4px 16px rgba(55,48,163,0.15);
+
+  /* ─── Animaciones ────────────────────────────────── */
+  --animate-fade-in-up: fadeInUp 0.5s cubic-bezier(.4,0,.2,1) forwards;
+  --animate-pulse-dot:  pulse-dot 1.5s ease infinite;
 }
 
+/* ─── Keyframes ──────────────────────────────────────── */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes pulse-dot {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.15); opacity: 0.8; }
+  0%, 100% { transform: scale(1);    opacity: 1; }
+  50%       { transform: scale(1.15); opacity: 0.8; }
 }
 
+/* ─── Base ───────────────────────────────────────────── */
 @layer base {
   *, *::before, *::after {
     box-sizing: border-box;
@@ -46,46 +79,58 @@
   }
 
   body {
-    @apply bg-gray-50 text-gray-900 font-sans text-base leading-relaxed antialiased;
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
   }
 
   img {
-    @apply max-w-full h-auto block;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   a {
-    @apply text-inherit no-underline;
+    color: inherit;
+    text-decoration: none;
   }
 
   button {
-    @apply cursor-pointer border-none bg-transparent font-[inherit];
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-family: inherit;
   }
 
   input, textarea, select {
-    @apply font-[inherit];
+    font-family: inherit;
   }
 
   ::selection {
-    @apply bg-brand-light text-gray-900;
+    background-color: var(--color-brand-light);
+    color: var(--color-brand-dark);
   }
 
   :focus-visible {
-    @apply outline-2 outline-brand outline-offset-2;
+    outline: 2px solid var(--color-brand-mid);
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-gray-100;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 rounded-sm;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400;
-  }
+  /* ─── Scrollbar ─── */
+  ::-webkit-scrollbar        { width: 6px; }
+  ::-webkit-scrollbar-track  { background: var(--color-surface); }
+  ::-webkit-scrollbar-thumb  { background: var(--color-border-strong); border-radius: 99px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-ink-muted); }
 }

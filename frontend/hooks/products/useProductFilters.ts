@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import type { Product } from "@/types/api/product";
+import { useAiSearch } from "@/hooks/data/useAi";
 
 export const PRODUCTS_PER_PAGE = 6;
 
@@ -10,18 +11,25 @@ export function useProductFilters(allProducts: Product[]) {
   const [search, setSearchState] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
+  const { data: aiResults } = useAiSearch(search);
+  const aiProductIds = useMemo(() => aiResults?.map((r: { productId: number }) => r.productId), [aiResults]);
+
   const filtered = useMemo(() => {
     return allProducts
       .filter((p) => selectedCategory === "Todas" || p.category === selectedCategory)
       .filter((p) => p.price >= priceRange[0] && p.price <= priceRange[1])
-      .filter((p) => p.name.toLowerCase().includes(search.toLowerCase()))
+      .filter((p) => {
+        if (!search.trim()) return true;
+        if (aiProductIds) return aiProductIds.includes(p.id);
+        return p.name.toLowerCase().includes(search.toLowerCase());
+      })
       .sort((a, b) => {
         if (sortBy === "price-asc") return a.price - b.price;
         if (sortBy === "price-desc") return b.price - a.price;
         if (sortBy === "rating") return b.rating - a.rating;
         return 0;
       });
-  }, [allProducts, selectedCategory, sortBy, priceRange, search]);
+  }, [allProducts, selectedCategory, sortBy, priceRange, search, aiProductIds]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PRODUCTS_PER_PAGE));
 
