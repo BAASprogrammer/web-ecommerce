@@ -11,10 +11,12 @@ import { useCategories } from "@/context/CategoriesContext";
 import { STATS } from "@/data/products";
 import { COUNTDOWN, TRUST_SIGNALS, WHY_US_FEATURES } from "@/data/home";
 import { PRODUCTS_PER_PAGE, useProductFilters } from "@/hooks/products/useProductFilters";
+import { useAuth } from "@/context/AuthContext";
 
 export default function HomePage() {
   const { products } = useProducts();
   const { filterCategories } = useCategories();
+  const { user } = useAuth();
   const {
     selectedCategory,
     setSelectedCategory,
@@ -30,6 +32,7 @@ export default function HomePage() {
       <Header />
       <main className="flex-1">
         {/* HERO */}
+        {!user && (
         <section
           id="hero"
           className="relative min-h-[580px] flex items-center overflow-hidden text-white"
@@ -100,6 +103,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
         {/* STATS */}
         <section id="stats" className="bg-white border-b border-gray-200">

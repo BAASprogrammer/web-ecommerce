@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Check, ShoppingCart } from "lucide-react";
 import type { ProductCardProps } from "@/types/api/product";
 import { useProductCard } from "@/hooks/products/useProductCard";
+import FavoriteHeart from "@/components/products/FavoriteHeart";
+import { useAuth } from "@/context/AuthContext";
 
 export default function ProductCard({ product }: ProductCardProps) {
   const {
@@ -14,6 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     handleAddToCart,
     formatPrice,
   } = useProductCard(product);
+  const { user, isAdmin } = useAuth();
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -49,14 +52,14 @@ export default function ProductCard({ product }: ProductCardProps) {
       </div>
 
       {/* Wishlist */}
-      <button
-        id={`wishlist-btn-${product.id}`}
-        onClick={() => setIsWishlisted(!isWishlisted)}
-        aria-label={isWishlisted ? "Quitar de favoritos" : "Agregar a favoritos"}
-        className="absolute top-3 right-3 z-1 bg-white border border-gray-200 rounded-full w-[34px] h-[34px] flex items-center justify-center text-base transition-all duration-200 shadow-sm hover:shadow-md"
-      >
-        {isWishlisted ? "❤️" : "🤍"}
-      </button>
+      {user && !isAdmin && (
+        <FavoriteHeart
+          id={`wishlist-btn-${product.id}`}
+          isFavorite={isWishlisted}
+          onToggle={setIsWishlisted}
+          className="absolute top-3 right-3 z-1 bg-white border border-gray-200 rounded-full w-[34px] h-[34px] flex items-center justify-center text-base transition-all duration-200 shadow-sm hover:shadow-md"
+        />
+      )}
 
       {/* Product image */}
       <Link href={`/products/${product.id}`} id={`product-link-${product.id}`}>
@@ -106,25 +109,31 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Add to cart */}
-        <button
-          id={`add-to-cart-${product.id}`}
-          onClick={handleAddToCart}
-          className={`mt-3 w-full py-2.5 px-4 text-white border-none rounded-[10px] text-sm font-bold transition-all duration-250 flex items-center justify-center gap-1.5 ${
-            addedToCart
-              ? "bg-emerald-500"
-              : "bg-brand hover:bg-brand-dark"
-          }`}
-        >
-          {addedToCart ? (
-            <>
-              <Check size={16} /> Agregado
-            </>
-          ) : (
-            <>
-              <ShoppingCart size={16} /> Agregar al carrito
-            </>
-          )}
-        </button>
+        {isAdmin ? (
+          <div className="mt-3 w-full py-2.5 px-4 rounded-[10px] text-sm font-bold text-gray-500 bg-gray-100 text-center border border-gray-200">
+            Vista previa
+          </div>
+        ) : (
+          <button
+            id={`add-to-cart-${product.id}`}
+            onClick={handleAddToCart}
+            className={`mt-3 w-full py-2.5 px-4 text-white border-none rounded-[10px] text-sm font-bold transition-all duration-250 flex items-center justify-center gap-1.5 ${
+              addedToCart
+                ? "bg-emerald-500"
+                : "bg-brand hover:bg-brand-dark"
+            }`}
+          >
+            {addedToCart ? (
+              <>
+                <Check size={16} /> Agregado
+              </>
+            ) : (
+              <>
+                <ShoppingCart size={16} /> Agregar al carrito
+              </>
+            )}
+          </button>
+        )}
       </div>
     </article>
   );

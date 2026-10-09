@@ -5,6 +5,7 @@ import { LegalModalProvider } from "@/components/ui/LegalModal";
 import { ProductsProvider } from "@/context/ProductsContext";
 import { CategoriesProvider } from "@/context/CategoriesContext";
 import { AuthProvider } from "@/context/AuthContext";
+import { FavoritesProvider } from "@/context/FavoritesContext";
 import ClientLayout from "@/components/providers/ClientLayout";
 import "./globals.css";
 
@@ -44,14 +45,16 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col antialiased">
         <QueryProvider>
           <AuthProvider>
-            <ProductsProvider>
-              <CategoriesProvider>
-                <LegalModalProvider>
-                  {children}
-                  <ClientLayout />
-                </LegalModalProvider>
-              </CategoriesProvider>
-            </ProductsProvider>
+            <FavoritesProvider>
+              <ProductsProvider>
+                <CategoriesProvider>
+                  <LegalModalProvider>
+                    {children}
+                    <ClientLayout />
+                  </LegalModalProvider>
+                </CategoriesProvider>
+              </ProductsProvider>
+            </FavoritesProvider>
           </AuthProvider>
         </QueryProvider>
       </body>

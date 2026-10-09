@@ -49,6 +49,15 @@ CREATE TABLE product_ratings (
     UNIQUE(product_id, user_id)          -- evita doble calificación del mismo usuario
 );
 
+CREATE TABLE favorites (
+    id BIGSERIAL PRIMARY KEY,
+    product_id BIGINT NOT NULL REFERENCES products(id),
+    user_id BIGINT NOT NULL,             -- sin FK: users vive en users_db
+    is_favorite BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(product_id, user_id)          -- un solo registro de favorito por usuario y producto
+);
+
 
 -- ============================================================
 -- BASE DE DATOS: users_db  (user-service)

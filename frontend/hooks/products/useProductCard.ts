@@ -1,9 +1,13 @@
 import { useState } from "react";
 import type { Product } from "@/types/api/product";
+import { useFavorites } from "@/context/FavoritesContext";
 
 export function useProductCard(product: Product) {
-  const [isWishlisted, setIsWishlisted] = useState(false);
+  const { isFavorite, toggleFavorite } = useFavorites();
   const [addedToCart, setAddedToCart] = useState(false);
+
+  const isWishlisted = isFavorite(product.id);
+  const setIsWishlisted = () => toggleFavorite(product.id);
 
   const discount = product.originalPrice
     ? Math.round(

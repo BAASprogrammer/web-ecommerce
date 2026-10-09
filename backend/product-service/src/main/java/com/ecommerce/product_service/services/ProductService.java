@@ -15,6 +15,7 @@ import com.ecommerce.product_service.dto.ProductRequest;
 import com.ecommerce.product_service.models.Category;
 import com.ecommerce.product_service.models.Product;
 import com.ecommerce.product_service.repositories.CategoryRepository;
+import com.ecommerce.product_service.repositories.FavoriteRepository;
 import com.ecommerce.product_service.repositories.ProductRatingRepository;
 import com.ecommerce.product_service.repositories.ProductRepository;
 
@@ -24,15 +25,18 @@ public class ProductService {
 	private final ProductRepository productRepository;
 	private final CategoryRepository categoryRepository;
 	private final ProductRatingRepository productRatingRepository;
+	private final FavoriteRepository favoriteRepository;
 	private final CatalogSeeder catalogSeeder;
 
 	public ProductService(ProductRepository productRepository,
 			CategoryRepository categoryRepository,
 			ProductRatingRepository productRatingRepository,
+			FavoriteRepository favoriteRepository,
 			CatalogSeeder catalogSeeder) {
 		this.productRepository = productRepository;
 		this.categoryRepository = categoryRepository;
 		this.productRatingRepository = productRatingRepository;
+		this.favoriteRepository = favoriteRepository;
 		this.catalogSeeder = catalogSeeder;
 	}
 
@@ -101,12 +105,14 @@ public class ProductService {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Producto no encontrado");
 		}
 		productRatingRepository.deleteByProductId(id);
+		favoriteRepository.deleteByProductId(id);
 		productRepository.deleteById(id);
 	}
 
 	@Transactional
 	public List<ProductItem> reset() {
 		productRatingRepository.deleteAll();
+		favoriteRepository.deleteAll();
 		productRepository.deleteAll();
 		categoryRepository.deleteAll();
 		catalogSeeder.seedIfEmpty();

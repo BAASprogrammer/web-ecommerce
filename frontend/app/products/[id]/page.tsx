@@ -5,13 +5,16 @@ import { useParams } from "next/navigation";
 import { ArrowLeft, Check, ShoppingCart } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FavoriteHeart from "@/components/products/FavoriteHeart";
 import { useProducts } from "@/context/ProductsContext";
 import { useProductCard } from "@/hooks/products/useProductCard";
+import { useAuth } from "@/context/AuthContext";
 import type { Product } from "@/types/api/product";
 
 function ProductDetailContent({ product }: { product: Product }) {
   const { isWishlisted, setIsWishlisted, addedToCart, discount, handleAddToCart, formatPrice } =
     useProductCard(product);
+  const { user, isAdmin } = useAuth();
 
   const renderStars = (rating: number) =>
     Array.from({ length: 5 }, (_, i) => (
@@ -109,34 +112,40 @@ function ProductDetailContent({ product }: { product: Product }) {
             )}
 
             {/* Wishlist */}
-            <button
-              type="button"
-              onClick={() => setIsWishlisted(!isWishlisted)}
-              className="self-start inline-flex items-center gap-2 py-2 px-3.5 border-[1.5px] border-gray-200 rounded-[10px] text-sm font-semibold text-gray-600 bg-white transition-all duration-200 hover:border-red-300 hover:text-red-500"
-            >
-              {isWishlisted ? "❤️" : "🤍"}{" "}
-              {isWishlisted ? "En favoritos" : "Agregar a favoritos"}
-            </button>
+            {user && !isAdmin && (
+              <FavoriteHeart
+                isFavorite={isWishlisted}
+                onToggle={setIsWishlisted}
+                label={isWishlisted ? "En favoritos" : "Agregar a favoritos"}
+                className="self-start inline-flex items-center gap-2 py-2 px-3.5 border-[1.5px] border-gray-200 rounded-[10px] text-sm font-semibold text-gray-600 bg-white transition-all duration-200 hover:border-red-300 hover:text-red-500"
+              />
+            )}
 
             {/* Add to cart */}
-            <button
-              id={`detail-add-to-cart-${product.id}`}
-              type="button"
-              onClick={handleAddToCart}
-              className={`w-full py-3.5 px-6 text-white border-none rounded-xl text-base font-bold transition-all duration-250 inline-flex items-center justify-center gap-2 ${
-                addedToCart ? "bg-emerald-500" : "bg-brand hover:bg-brand-dark"
-              }`}
-            >
-              {addedToCart ? (
-                <>
-                  <Check size={18} /> Agregado al carrito
-                </>
-              ) : (
-                <>
-                  <ShoppingCart size={18} /> Agregar al carrito
-                </>
-              )}
-            </button>
+            {isAdmin ? (
+              <div className="w-full py-3.5 px-6 rounded-xl text-base font-bold text-gray-500 bg-gray-100 border border-gray-200 text-center">
+                Vista previa — solo visualización
+              </div>
+            ) : (
+              <button
+                id={`detail-add-to-cart-${product.id}`}
+                type="button"
+                onClick={handleAddToCart}
+                className={`w-full py-3.5 px-6 text-white border-none rounded-xl text-base font-bold transition-all duration-250 inline-flex items-center justify-center gap-2 ${
+                  addedToCart ? "bg-emerald-500" : "bg-brand hover:bg-brand-dark"
+                }`}
+              >
+                {addedToCart ? (
+                  <>
+                    <Check size={18} /> Agregado al carrito
+                  </>
+                ) : (
+                  <>
+                    <ShoppingCart size={18} /> Agregar al carrito
+                  </>
+                )}
+              </button>
+            )}
           </div>
         </div>
       </div>

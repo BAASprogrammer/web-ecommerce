@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { LogOut, ShoppingCart } from "lucide-react";
+import { Heart, LogOut, ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { NAV_ITEMS } from "@/data/navigation";
 import { useAuth } from "@/context/AuthContext";
@@ -58,18 +58,20 @@ export default function Header() {
                 {/* Right actions */}
                 <div className="flex items-center gap-3">
                     {/* Cart */}
-                    <button
-                        id="header-cart-btn"
-                        aria-label="Carrito de compras"
-                        className="relative bg-gray-100 border-none rounded-[10px] w-[42px] h-[42px] flex items-center justify-center text-lg transition-colors duration-200 hover:bg-brand-light"
-                    >
-                        <ShoppingCart size={20} />
-                        {cartCount > 0 && (
-                            <span className="absolute -top-1 -right-1 bg-brand text-white text-[0.65rem] font-bold w-[18px] h-[18px] rounded-full flex items-center justify-center border-2 border-white">
-                                {cartCount}
-                            </span>
-                        )}
-                    </button>
+                    {!isAdmin && (
+                        <button
+                            id="header-cart-btn"
+                            aria-label="Carrito de compras"
+                            className="relative bg-gray-100 border-none rounded-[10px] w-[42px] h-[42px] flex items-center justify-center text-lg transition-colors duration-200 hover:bg-brand-light"
+                        >
+                            <ShoppingCart size={20} />
+                            {cartCount > 0 && (
+                                <span className="absolute -top-1 -right-1 bg-brand text-white text-[0.65rem] font-bold w-[18px] h-[18px] rounded-full flex items-center justify-center border-2 border-white">
+                                    {cartCount}
+                                </span>
+                            )}
+                        </button>
+                    )}
 
                     {/* Auth buttons — desktop */}
                     <div className="hidden md:flex items-center gap-2">
@@ -82,6 +84,16 @@ export default function Header() {
                                         className="px-[1.125rem] py-2 border-[1.5px] border-gray-200 rounded-[10px] text-[0.9rem] font-semibold text-gray-700 bg-white transition-all duration-200 hover:border-brand hover:text-brand"
                                     >
                                         Admin
+                                    </Link>
+                                )}
+                                {!isAdmin && (
+                                    <Link
+                                        id="header-favorites-btn"
+                                        href="/favorites"
+                                        aria-label="Mis favoritos"
+                                        className="inline-flex items-center gap-2 px-[1.125rem] py-2 border-[1.5px] border-gray-200 rounded-[10px] text-[0.9rem] font-semibold text-gray-700 bg-white transition-all duration-200 hover:border-rose-300 hover:text-rose-500"
+                                    >
+                                        <Heart size={16} /> Favoritos
                                     </Link>
                                 )}
                                 <span className="px-1 text-[0.9rem] font-semibold text-gray-700 max-w-[120px] truncate">
@@ -165,6 +177,15 @@ export default function Header() {
                                     className="px-4 py-3 rounded-lg text-base font-semibold text-gray-700 border-[1.5px] border-gray-200 text-center block"
                                 >
                                     Panel de Administración
+                                </Link>
+                            )}
+                            {!isAdmin && (
+                                <Link
+                                    href="/favorites"
+                                    onClick={() => setMenuOpen(false)}
+                                    className="px-4 py-3 rounded-lg text-base font-semibold text-gray-700 border-[1.5px] border-gray-200 text-center block"
+                                >
+                                    Mis Favoritos
                                 </Link>
                             )}
                             <span className="px-4 py-2 rounded-lg text-base font-semibold text-gray-700 bg-gray-50 text-center block">
